@@ -1,58 +1,96 @@
+const { setTimer } = require("./constants") ;
 const fs = require("fs");
-const currentDate = new Date();
 
-const setTimer = (h,m,s) => {
-    currentDate.setHours(h,m,s);
-    return currentDate.toISOString();
-}
-
-const BB = fs.readFileSync("assets/imgs/BB’s_African_News_Magazine_Show.png");
-const Oluwakemi = fs.readFileSync("assets/imgs/Yoruba_Language_Talk_Show_with_Oluwakemi_Akinbobola.png");
-const Saada = fs.readFileSync("assets/imgs/Swahili_Voice_with_Saada.png");
-const Yves = fs.readFileSync("assets/imgs/Histoire_du_Cameroun_Histoire_d’Afrique_with_Yves_Modeste.png");
-const Agatha = fs.readFileSync("assets/imgs/Mind_Matters_with_Agatha_Kabera.png");
-const Chinny = fs.readFileSync("assets/imgs/Music_Request_Show_with_Chinny.png");
-const KBL = fs.readFileSync("assets/imgs/On_The_Double_with_KBL.png");
-const JeanNjali = fs.readFileSync("assets/imgs/Parlons_En_with_Jean_Michel_and_Guy_Njali.png");
-const DJKweizah = fs.readFileSync("assets/imgs/Roots_Rock_Reggae_with_DJ_Kweizah.png");
-const Shokunbi = fs.readFileSync("assets/imgs/The_Nigerian_Pride_with_Dr_Lion_Oluwole_Shokunbi.png");
-const LadiFemi = fs.readFileSync("assets/imgs/The_Sports_Engine_with_Ladi_Egbedire_and_Femi_Afolabi.png");
-const Pauhela = fs.readFileSync("assets/imgs/presenter-4.png");
-const defaultJambo = fs.readFileSync("assets/logo_24.png")
+// presenters images
+const defaultJambo = fs.readFileSync("./assets/logo_24.png")
+const BB = fs.readFileSync("./assets/imgs/BB.png");
+const Oluwakemi = fs.readFileSync("./assets/imgs/Akinbobola.png");
+const Saada = fs.readFileSync("./assets/imgs/Saada.png");
+const Yves = fs.readFileSync("./assets/imgs/Yves.png");
+const Agatha = fs.readFileSync("./assets/imgs/Agatha.png");
+const Chinny = fs.readFileSync("./assets/imgs/Chinny.png");
+const KBL = fs.readFileSync("./assets/imgs/KBL.png");
+const JeanNjali = fs.readFileSync("./assets/imgs/Michel_and_Guy.png");
+const DJKweizah = fs.readFileSync("./assets/imgs/DJ_Kweizah.png");
+const Shokunbi = fs.readFileSync("./assets/imgs/Shokunbi.png");
+const LadiFemi = fs.readFileSync("./assets/imgs/Ladi_and_Femi.png");
+const host3000 = fs.readFileSync("./assets/imgs/3000_miles.png");
+const africanWarrior = fs.readFileSync("./assets/imgs/African_warrior.png");
+const drDada = fs.readFileSync("./assets/imgs/Dr_Dada.png");
 
 const data = {
-    "Monday" : [
+    "Mon" : [
         {
             id: Math.random().toString(36).slice(2),
             title : "Swahili Voice",
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
             presenter : "Saada",
-            img : Saada
+            img : Saada,
+            desc : "Talk and Music by Saada as she discusses whatever you want her to talk about. It is your questions and your discussion in Swahili plus Swahili music."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Interviews",
             startTime : setTimer(1,0,0),
-            endTime : setTimer(6,0,0),
+            endTime : setTimer(2,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Gospel Music",
+            title : "North Africa Playlist (NAP)",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from North African countries"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "North Africa Playlist (NAP)",
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(5,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from North African countries"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(5,0,0),
+            endTime : setTimer(6,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "North Africa Playlist (NAP)",
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from North African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Mind Matters",
+            title : "Mind Matters with Agatha Kabera",
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
             presenter : "Agatha Kabera",
-            img : Agatha
+            img : Agatha,
+            desc : "Agatha Kabera discusses mental health issues, the stigmas, stereotypes and misconceptions within the Black communities."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -60,47 +98,53 @@ const data = {
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Recipe for Success",
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter : "Bishop Francis Alao",
+            img : defaultJambo,
+            desc : "Bishop Francis Alao discusses what constitute success."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "BB African Magazine Show",
+            title: `BB's African News Magazine`,
             startTime : setTimer(10,0,0),
             endTime : setTimer(12,0,0),
-            presenter : "BB",
-            img : BB
+            presenter: "BB",
+            img: BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Swahili Voice",
+            title: 'Swahili Voice',
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            presenter : "Saada",
-            img : Saada
+            presenter: "Saada",
+            img: Saada,
+            desc : "Talk and Music by Saada as she discusses whatever you want her to talk about. It is your questions and your discussion in Swahili plus Swahili music."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Mon Point De Vue Sur La Culture",
+            title: 'Parlons-en',
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            presenter : "Pauhela",
-            img : Pauhela
+            presenter: "Jean Michel and Guy Njali",
+            img: JeanNjali,
+            desc : "Weekly show in French about Heritage"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "BB African Magazine Show",
+            title: `BB's African News Magazine`,
             startTime : setTimer(14,0,0),
             endTime : setTimer(16,0,0),
-            presenter : "BB",
-            img : BB
+            presenter: "BB",
+            img: BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -108,84 +152,127 @@ const data = {
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
             presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi
+            img: Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'North Africa Playlist (NAP)',
+            title: 'North African Playlist (NAP)',
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            status: "not yet",
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A selection of music from North African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Pachedu',
+            title: 'Pachedu Renfrewshire',
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Juxtaposition Debate',
             startTime : setTimer(19,0,0),
-            endTime : setTimer(22,0,0),
+            endTime : setTimer(21,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Serious discussion with Barbershop Banter hosted by Andre, Roxanne and Easy"
         },
-        // {
-        //     id: Math.random().toString(36).slice(2),
-        //     title: 'Spotlight: Shining the lights on Creative talents in Scotland',
-        //     startTime : setTimer(21,0,0),
-        //     endTime : setTimer(22,0,0),
-        //     status: "not yet",
-        //     presenter: "",
-        //     img: Oluwakemi
-        // },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'North Africa Playlist (NAP)',
+            title: 'The Science Show',
+            startTime : setTimer(21,0,0),
+            endTime : setTimer(22,0,0),
+            presenter: "Dr Adetunmise Dada",
+            img: drDada,
+            desc : "Dr Adetunmise Dada explores everything to do with science, technology, engineering and mathematics (STEM) in plain language, through a series of interesting interviews, news highlights, reports, music and much more. The programme also showcases the people behind STEM-related activities in Scotland and beyond, all in a fun and accessible way."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Made in Scotland',
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Showcase of Scotland’s undiscovered talent"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Mon Point De Vue Sur Le Culture',
+            title: 'North African Playlist (NAP)',
             startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
-            status: "not yet",
-            presenter: "Pauhela",
-            img: Pauhela
+            endTime : setTimer(24,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from North African countries"
         }
     ],
-    "Tuesday" : [
+    "Tues" : [
         {
             id: Math.random().toString(36).slice(2),
-            title : "Gospel Music",
+            title : "Horn of Africa Playlist",
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "North Africa Playlist (NAP)",
+            title : "Interviews",
             startTime : setTimer(1,0,0),
+            endTime : setTimer(2,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Horn of Africa Playlist",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Horn of Africa Playlist",
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(5,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Horn of Africa",
+            title : "Horn of Africa Playlist",
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : ""
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -193,97 +280,116 @@ const data = {
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Parlons EN",
+            title : "Parlons-en",
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
             presenter : "Jean Michel and Guy Njali",
-            img : JeanNjali
+            img : JeanNjali,
+            desc : "Weekly show in French about Heritage"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Interviews",
+            title : "Horn of Africa Playlist",
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Inspiring Transformation (IT)",
+            title: 'Inspiring Transformation',
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "We talk to people pushing boundaries on the road to success"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Mon Point De Vue Sur La Culture",
+            title: `BB's African News Magazine`,
             startTime : setTimer(11,0,0),
-            endTime : setTimer(12,0,0),
-            presenter : "BB",
-            img : BB
+            endTime : setTimer(13,0,0),
+            presenter: "BB",
+            img: BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "BB African Magazine Show",
-            startTime : setTimer(12,0,0),
+            title: 'Horn of Africa Playlist',
+            startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            presenter : "BB",
-            img : BB
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Horn of Africa Playlist (HAP)",
+            title: '3000 Miles',
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: host3000,
+            desc : "3000 Miles kicked off initially as an immigration podcast which concerns itself with Afro-Caribbean realities and predicament in the diaspora before becoming a proper radio program on Jambo Radio Scotland which is now causing a positive wave and getting lots of attention."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Pachedu',
+            title: 'Pachedu Renfrewshire',
             startTime : setTimer(15,0,0),
-            endTime : setTimer(17,0,0),
-            status: "not yet",
-            presenter: "Pauhela Ngangue",
-            img: Pauhela
+            endTime : setTimer(16,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
         },
-        // {
-        //     id: Math.random().toString(36).slice(2),
-        //     title: 'Yoruba Language Talk Show',
-        //     startTime : setTimer(16,0,0),
-        //     endTime : setTimer(17,0,0),
-        //     status: "not yet",
-        //     presenter: "Oluwakemi Akinbobola",
-        //     img: Oluwakemi
-        // },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Roots Rock Reggie',
+            title: 'African Warrior',
+            startTime : setTimer(16,0,0),
+            endTime : setTimer(17,0,0),
+            presenter: "Jambo Presenter",
+            img: africanWarrior,
+            desc : "The main aim of the African warrior show on Jambo Radio is to celebrate the achievements of African diasporans and their communities both abroad and back in Africa. This will be done by recognising such people on-air and seeking to have them as guests during the show to speak about their achievements, journey, aspirations, goals and advice to others such as them looking to leave a mark."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Roots Rock Reggae',
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
             presenter: "DJ Kweizah",
-            img: DJKweizah
+            img: DJKweizah,
+            desc : "DJ Kweizah takes you on a journey to the roots of reggae music and bounces the tracks that make reggae music spiritual and exciting."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Histoire du Cameroun Histoire d\'Afrique',
+            title: 'Horn of Africa Playlist',
             startTime : setTimer(18,0,0),
-            endTime : setTimer(20,0,0),
-            presenter: "Yves Modeste",
-            img: Yves
+            endTime : setTimer(19,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Mon Point De Vue Sur La Culture',
+            title: 'Interviews',
+            startTime : setTimer(19,0,0),
+            endTime : setTimer(20,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Parlons-en',
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            presenter: "Pauhela Ngangue",
-            img: Pauhela
+            presenter: "Jean Michel and Guy Njali",
+            img: JeanNjali,
+            desc : "Weekly show in French about Heritage"
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -291,301 +397,527 @@ const data = {
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
             presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi
+            img: Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Horn of Africa Playlist (HAP)',
+            title: 'Horn of Africa Playlist',
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A selection of music from the horn of Africa countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Interviews',
+            title: 'Made in Scotland',
             startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
+            endTime : setTimer(24,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Showcase of Scotland’s undiscovered talent"
         }
     ],
-    "Wednesday" : [
+    "Wed" : [
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "East Africa Playlist",
+            startTime : setTimer(0,0,0),
+            endTime : setTimer(1,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from East African countries"
+        },
         {
             id: Math.random().toString(36).slice(2),
             title : "Interviews",
-            startTime : setTimer(0,0,0),
+            startTime : setTimer(1,0,0),
+            endTime : setTimer(2,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "East Africa Playlist",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from East African countries"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "East Africa Playlist",
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(5,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from East African countries"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Gospel Music",
-            startTime : setTimer(6,0,0),
-            endTime : setTimer(8,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Mon Point De Vue Sur Le Culture",
-            startTime : setTimer(8,0,0),
-            endTime : setTimer(9,0,0),
-            presenter : "Pouhela Ngangue",
-            img : Pauhela
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Inspiring Transformations (IT)",
-            startTime : setTimer(9,0,0),
-            endTime : setTimer(10,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Mon Point De Vue Sur Le Culture",
-            startTime : setTimer(10,0,0),
-            endTime : setTimer(11,0,0),
-            presenter : "Pouhela Ngangue",
-            img : Pauhela
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Interviews",
-            startTime : setTimer(11,0,0),
-            endTime : setTimer(12,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "East Africa Playlist (EAP)",
-            startTime : setTimer(12,0,0),
-            endTime : setTimer(13,0,0),
+            startTime : setTimer(6,0,0),
+            endTime : setTimer(7,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from East African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Swahili Voice",
-            startTime : setTimer(13,0,0),
-            endTime : setTimer(14,0,0),
-            presenter : "Saada",
-            img : Saada
+            title : "Interviews",
+            startTime : setTimer(7,0,0),
+            endTime : setTimer(8,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "The Sports Engine",
-            startTime : setTimer(14,0,0),
-            endTime : setTimer(15,0,0),
-            presenter : "Ladi Egbedire and Femi Afolabi",
-            img : LadiFemi
+            title : "East Africa Playlist",
+            startTime : setTimer(8,0,0),
+            endTime : setTimer(9,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from East African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Swahili Voice',
-            startTime : setTimer(15,0,0),
-            endTime : setTimer(16,0,0),
+            title: `Interviews`,
+            startTime : setTimer(9,0,0),
+            endTime : setTimer(10,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: `Swahili Voice`,
+            startTime : setTimer(10,0,0),
+            endTime : setTimer(11,0,0),
             presenter: "Saada",
-            img: Saada
+            img: Saada,
+            desc : "Talk and Music by Saada as she discusses whatever you want her to talk about. It is your questions and your discussion in Swahili plus Swahili music."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Yoruba Language Talk Show',
-            startTime : setTimer(16,0,0),
-            endTime : setTimer(17,0,0),
+            startTime : setTimer(11,0,0),
+            endTime : setTimer(12,0,0),
             presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi
+            img: Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: '3000 Miles',
+            startTime : setTimer(12,0,0),
+            endTime : setTimer(13,0,0),
+            presenter: "Jambo Presenter",
+            img: host3000,
+            desc : "3000 Miles kicked off initially as an immigration podcast which concerns itself with Afro-Caribbean realities and predicament in the diaspora before becoming a proper radio program on Jambo Radio Scotland which is now causing a positive wave and getting lots of attention."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'East Africa Playlist (EAP)',
-            startTime : setTimer(17,0,0),
-            endTime : setTimer(18,0,0),
+            startTime : setTimer(13,0,0),
+            endTime : setTimer(14,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A selection of music from East African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'The Nigerian Pride',
+            title: 'The Science Show',
+            startTime : setTimer(14,0,0),
+            endTime : setTimer(15,0,0),
+            presenter: "Dr Adetunmise Dada",
+            img: drDada,
+            desc : "Dr Adetunmise Dada explores everything to do with science, technology, engineering and mathematics (STEM) in plain language, through a series of interesting interviews, news highlights, reports, music and much more. The programme also showcases the people behind STEM-related activities in Scotland and beyond, all in a fun and accessible way."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Parlons-en',
+            startTime : setTimer(15,0,0),
+            endTime : setTimer(16,0,0),
+            presenter: "Jean Michel and Guy Njali",
+            img: JeanNjali,
+            desc : "Weekly show in French about Heritage"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'The Sports Engine',
+            startTime : setTimer(16,0,0),
+            endTime : setTimer(17,0,0),
+            presenter: "Ladi Egbedire and Femi Afolabi",
+            img: LadiFemi,
+            desc : "Hosted by Ladi Egbedire and Femi Afolabi. Live every Wednesday at 2pm, Ladi and Femi talk everything sport, joined by international guests, with the latest updates from Africa, the Caribbean, and Scotland."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'East African Playlist',
+            startTime : setTimer(17,0,0),
+            endTime : setTimer(18,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from East African countries"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'The Nigerian Pride Show',
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
             presenter: "Dr Lion Oluwole Shokunbi",
-            img: Shokunbi
+            img: Shokunbi,
+            desc : "Dr Lion Oluwole Shokunbi and guests discusses Nigeria with Nigerians."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Histoire du Cameroun Histoire d\'Afrique',
+            title: 'East African Playlist',
             startTime : setTimer(19,0,0),
-            endTime : setTimer(21,0,0),
-            presenter: "Yves Modeste",
-            img: Yves
+            endTime : setTimer(20,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from East African countries"
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Interviews',
-            startTime : setTimer(21,0,0),
-            endTime : setTimer(22,0,0),
+            startTime : setTimer(20,0,0),
+            endTime : setTimer(21,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Pachedu',
+            title: 'Swahili Voice',
+            startTime : setTimer(21,0,0),
+            endTime : setTimer(22,0,0),
+            presenter: "Saada",
+            img: Saada,
+            desc : "Talk and Music by Saada as she discusses whatever you want her to talk about. It is your questions and your discussion in Swahili plus Swahili music."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Pachedu Renfrewshire',
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'East African Playlist',
+            startTime : setTimer(23,0,0),
+            endTime : setTimer(24,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from East African countries"
+        }
+    ],
+    "Thurs" : [
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Central Africa Playlist",
+            startTime : setTimer(0,0,0),
+            endTime : setTimer(1,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(1,0,0),
+            endTime : setTimer(2,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Central Africa Playlist",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Central Africa Playlist",
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(5,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(5,0,0),
+            endTime : setTimer(6,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Central Africa Playlist",
+            startTime : setTimer(6,0,0),
+            endTime : setTimer(7,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(7,0,0),
+            endTime : setTimer(8,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Central Africa Playlist",
+            startTime : setTimer(8,0,0),
+            endTime : setTimer(9,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : `BB's African News Magazine`,
+            startTime : setTimer(9,0,0),
+            endTime : setTimer(11,0,0),
+            presenter : "BB",
+            img : BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Central Africa Playlist',
+            startTime : setTimer(11,0,0),
+            endTime : setTimer(12,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from Central African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Omo Yoruba Atata',
+            startTime : setTimer(12,0,0),
+            endTime : setTimer(13,0,0),
+            presenter: "Yves Modeste",
+            img: Yves,
+            desc : "Is another Yoruba show on Jambo Radio Scotland, which means A Good Yoruba Child. It is a show that would teach young kids how to read and write Yoruba Language and also Pronounce words in Yoruba. It will also include story telling from the olden days for young people and adults that want to know more about the Yoruba culture."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'The Sports Engine',
+            startTime : setTimer(13,0,0),
+            endTime : setTimer(14,0,0),
+            presenter: "Ladi Egbedire and Femi Afolabi",
+            img: LadiFemi,
+            desc : "Hosted by Ladi Egbedire and Femi Afolabi. Live every Wednesday at 2pm, Ladi and Femi talk everything sport, joined by international guests, with the latest updates from Africa, the Caribbean, and Scotland."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Interviews',
-            startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo
-        }
-    ],
-    "Thursday" : [
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Interviews",
-            startTime : setTimer(0,0,0),
-            endTime : setTimer(8,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "The Sports Engine",
-            startTime : setTimer(8,0,0),
-            endTime : setTimer(9,0,0),
-            presenter : "Ladi Egbedire and Femi Afolabi",
-            img : LadiFemi
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Yoruba Language Talk Show",
-            startTime : setTimer(9,0,0),
-            endTime : setTimer(10,0,0),
-            presenter : "Oluwakemi Akinbobola",
-            img : Oluwakemi
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "BB African Magazine Show",
-            startTime : setTimer(10,0,0),
-            endTime : setTimer(12,0,0),
-            presenter : "BB",
-            img : BB
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Southern Africa Playlist (SAP)",
-            startTime : setTimer(12,0,0),
-            endTime : setTimer(13,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Interviews",
-            startTime : setTimer(13,0,0),
-            endTime : setTimer(14,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Exclusive Interviews",
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Mon Point De Vue Sur Le Culture",
+            title: 'Parlons-en',
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            presenter : "Pouhela Ngangue",
-            img : Pauhela
+            presenter: "Jean Michel and Guy Njali",
+            img: JeanNjali,
+            desc : "Weekly show in French about Heritage"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Pachedu",
+            title: 'Pachedu Renfrewshire',
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "The Nigerian Pride",
+            title: 'The Nigerian Pride Show',
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            presenter : "Dr Lion Oluwole Shokunbi",
-            img : Shokunbi
+            presenter: "Dr Lion Oluwole Shokunbi",
+            img: Shokunbi,
+            desc : "Dr Lion Oluwole Shokunbi and guests discusses Nigeria with Nigerians."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'On The Double By KBL',
+            title: 'On The Double',
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
             presenter: "KBL",
-            img: KBL
+            img: KBL,
+            desc : "This program seeks to extensively educate the public on the positivity of hip-life, Urban music and lifestyle. It also presents the latest news and information on music, lifestyle and various artists to the public."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Regard Sur Le Diplomatie',
+            title: 'Regard Sur La Diplomatie',
             startTime : setTimer(19,0,0),
             endTime : setTimer(21,0,0),
             presenter: "Yves Modeste",
-            img: Yves
+            img: Yves,
+            desc : "Yves Modeste Ngue and panel talks on global diplomacy"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Oops, We Digressed',
+            title: 'The Science Show',
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            presenter: "Tanya, Michelle and Helen",
-            img: defaultJambo
+            presenter: "Dr Adetunmise Dada",
+            img: drDada,
+            desc : "Dr Adetunmise Dada explores everything to do with science, technology, engineering and mathematics (STEM) in plain language, through a series of interesting interviews, news highlights, reports, music and much more. The programme also showcases the people behind STEM-related activities in Scotland and beyond, all in a fun and accessible way."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Southern Africa Playlist (SAP)',
+            title: 'Central African Playlist',
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A selection of music from Central African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'The Week In Holyrood (TWiH)',
             startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
+            endTime : setTimer(24,0,0),
             presenter: "Charles Fletcher",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Our Parliamentary Editor, Charles’s fletcher brings weekly updates on what is happening at the Scottish parliament."
         },
     ],
-    "Friday" : [
+    "Fri" : [
         {
             id: Math.random().toString(36).slice(2),
-            title : "Gospel Music",
+            title : "West African Playlist",
             startTime : setTimer(0,0,0),
-            endTime : setTimer(7,0,0),
+            endTime : setTimer(1,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Regard Sur La Diplomatie",
+            title : "Interviews",
+            startTime : setTimer(1,0,0),
+            endTime : setTimer(2,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(5,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
+            startTime : setTimer(5,0,0),
+            endTime : setTimer(6,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(6,0,0),
+            endTime : setTimer(7,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Interviews",
             startTime : setTimer(7,0,0),
+            endTime : setTimer(8,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            presenter : "Yves Modeste",
-            img : Yves
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -593,47 +925,53 @@ const data = {
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
             presenter : "Oluwakemi Akinbobola",
-            img : Oluwakemi
+            img : Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "BB African Magazine Show",
+            title : `BB's African News Magazine`,
             startTime : setTimer(10,0,0),
             endTime : setTimer(12,0,0),
             presenter : "BB",
-            img : BB
+            img : BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "West Africa Playlist (WAP)",
+            title : "West African Playlist",
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "The Week In Holyrood (TWiH)",
+            title: 'The Week In Holyrood (TWiH)',
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            presenter : "Charles Fletcher",
-            img : defaultJambo
+            presenter: "Charles Fletcher",
+            img: defaultJambo,
+            desc : "Our Parliamentary Editor, Charles’s fletcher brings weekly updates on what is happening at the Scottish parliament."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Our Heritage",
+            title: 'Planet Sports Footbal Africa',
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "Football talk show produced by Passion for Sports"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "West Africa Playlist (WAP)",
+            title: 'West African Playlist',
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from West African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -641,39 +979,44 @@ const data = {
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
             presenter : "Oluwakemi Akinbobola",
-            img : Oluwakemi
+            img : Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Mind Matters",
+            title : "Mind Matters with Agatha Kabera",
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
             presenter : "Agatha Kabera",
-            img : Agatha
+            img : Agatha,
+            desc : "Agatha Kabera discusses mental health issues, the stigmas, stereotypes and misconceptions within the Black communities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Exclusive Interviews',
+            title : "Interviews",
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Our Heritage',
+            title : "Our Heritage",
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A series of programmes about the heritage sector in Scotland. Also available in other languages."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Music Request Show (MRS) with Chinny',
+            title : "Music Request Show with Chinny",
             startTime : setTimer(20,0,0),
             endTime : setTimer(22,0,0),
-            presenter: "Chinny",
-            img: Chinny
+            presenter : "Chinny",
+            img : Chinny,
+            desc : "Music Show with Chinny as your host. Every week she interviews a music artist and gives her top 5 tracks of the week. In the second hour, she plays the music requests that our listeners have been sending in on our WhatsApp number, through the website and app"
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -681,105 +1024,172 @@ const data = {
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Tanya, Michelle and Helen",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Hosted by three best friends, Tanya, Michelle and Helen – this is a fun show that explores friendship, life and trending pop-culture debates."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Interviews',
+            title: 'West Afrcan Playlist',
             startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
+            endTime : setTimer(24,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "A selection of music from West African countries."
         }
     ],
-    "Saturday" : [
+    "Sat" : [
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Southern African Playlist",
+            startTime : setTimer(0,0,0),
+            endTime : setTimer(1,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Southern African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(1,0,0),
+            endTime : setTimer(2,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Southern African Playlist",
+            startTime : setTimer(2,0,0),
+            endTime : setTimer(3,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from Southern African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "West African Playlist",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from West African countries."
+        },
         {
             id: Math.random().toString(36).slice(2),
             title : "Interviews",
-            startTime : setTimer(0,0,0),
+            startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Interviews + Music",
+            title : "Southern African Playlist",
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from Southern African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Interviews",
             startTime : setTimer(6,0,0),
+            endTime : setTimer(7,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "We talk to ordinary people doing extraordinary things in the community."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Southern African Playlist",
+            startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from Southern African countries."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "This Week in Holyrood (TWiH)",
             startTime : setTimer(8,0,0),
-            endTime : setTimer(10,0,0),
+            endTime : setTimer(9,0,0),
             presenter : "Charles Fletcher",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "Our Parliamentary Editor, Charles’s fletcher brings weekly updates on what is happening at the Scottish parliament."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Planet Sports Football Africa",
+            startTime : setTimer(9,0,0),
+            endTime : setTimer(10,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "Football talk show produced by Passion for Sports"
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Yoruba Language Talk Show",
             startTime : setTimer(10,0,0),
-            endTime : setTimer(12,0,0),
+            endTime : setTimer(11,0,0),
             presenter : "Oluwakemi Akinbobola",
-            img : Oluwakemi
+            img : Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Our Heritage",
-            startTime : setTimer(12,0,0),
+            title : "BB's African Magazine Show",
+            startTime : setTimer(11,0,0),
             endTime : setTimer(13,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter : "BB",
+            img : BB,
+            desc : "Weekly show focused on all things positive from the Scottish African Diaspora and the African Diaspora and the African continent. Features: Interviews and spotlight on ordinary people doing extraordinary things for society/African proverbs and A moment in History telling the true facts about some known and unknown historical personalities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Politics Explained",
+            title : "On the Double by KBL",
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter : "KBL",
+            img : KBL,
+            desc : "This program seeks to extensively educate the public on the positivity of hip-life, Urban music and lifestyle. It also presents the latest news and information on music, lifestyle and various artists to the public."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Parlons EN",
+            title : "Parlons-en",
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
             presenter : "Jean Michel and Guy Njali",
-            img : JeanNjali
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Central Africa Playlist (CAP)",
-            startTime : setTimer(15,0,0),
-            endTime : setTimer(16,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title: 'Pachedu',
-            startTime : setTimer(16,0,0),
-            endTime : setTimer(17,0,0),
-            presenter: "Pouhela Ngangue",
-            img: Pauhela
+            img : JeanNjali,
+            desc : "Weekly show in French about Heritage"
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Pidgin Yarn',
-            startTime : setTimer(17,0,0),
-            endTime : setTimer(19,0,0),
+            startTime : setTimer(15,0,0),
+            endTime : setTimer(17,0,0),
             presenter: "Miyaki and co-hosts",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Talk show in Pidgin Language - Miyaki and co-hosts chat on topic and play music."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Southern African Playlist',
+            startTime : setTimer(17,0,0),
+            endTime : setTimer(18,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from Southern African countries."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Pachedu',
+            startTime : setTimer(18,0,0),
+            endTime : setTimer(19,0,0),
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -787,41 +1197,46 @@ const data = {
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
             presenter: "Saada",
-            img: Saada
+            img: Saada,
+            desc : "Talk and Music by Saada as she discusses whatever you want her to talk about. It is your questions and your discussion in Swahili plus Swahili music."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Our Heritage',
+            title: 'The Science Show',
             startTime : setTimer(20,0,0),
+            endTime : setTimer(21,0,0),
+            presenter: "Dr Adetunmise Dada",
+            img: drDada,
+            desc : "Dr Adetunmise Dada explores everything to do with science, technology, engineering and mathematics (STEM) in plain language, through a series of interesting interviews, news highlights, reports, music and much more. The programme also showcases the people behind STEM-related activities in Scotland and beyond, all in a fun and accessible way."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Black Music in Scotland',
+            startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Black Music in Scotland. Hosted by MC Trigga"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Mind Matters',
+            title: 'Music Request Show with Chinny',
             startTime : setTimer(22,0,0),
-            endTime : setTimer(23,0,0),
-            presenter: "Agatha Kabera",
-            img: Agatha
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title: 'Pidgin Yarn',
-            startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
-            presenter: "Miyaki and co-hosts",
-            img: defaultJambo
+            endTime : setTimer(24,0,0),
+            presenter: "Chinny",
+            img: Chinny,
+            desc : "Music Show with Chinny as your host. Every week she interviews a music artist and gives her top 5 tracks of the week. In the second hour, she plays the music requests that our listeners have been sending in on our WhatsApp number, through the website and app"
         }
     ],
-    "Sunday" : [
+    "Sun" : [
         {
             id: Math.random().toString(36).slice(2),
-            title : "Pidgin Yarn",
+            title : "Carribean Vibes",
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            presenter : "Miyaki and co-hosts",
-            img : defaultJambo
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -829,15 +1244,35 @@ const data = {
             startTime : setTimer(1,0,0),
             endTime : setTimer(3,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "Serious discussion with Barbershop Banter hosted by Andre, Roxanne and Easy"
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Carribean Vibes",
+            startTime : setTimer(3,0,0),
+            endTime : setTimer(4,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Gospel Music",
-            startTime : setTimer(3,0,0),
+            startTime : setTimer(4,0,0),
+            endTime : setTimer(8,0,0),
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "Inspiring songs by leading gospel singers to kick- start your week in meditation and reflection."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title : "Carribean Vibes",
+            startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -845,47 +1280,44 @@ const data = {
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
             presenter : "Charles Fletcher",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "Our Parliamentary Editor, Charles’s fletcher brings weekly updates on what is happening at the Scottish parliament."
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "Recipe for Success",
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter : "Bishop Francis Alao",
+            img : defaultJambo,
+            desc : "Bishop Francis Alao discusses what constitute success."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Inspiring Transformation (IT)",
+            title : "Carribean Vibes",
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
             presenter : "Jambo Presenter",
-            img : defaultJambo
+            img : defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title : "Parlons EN",
+            title : "Regard Sur La Diplomatie",
             startTime : setTimer(12,0,0),
-            endTime : setTimer(13,0,0),
-            presenter : "Jean Michel and Guy Njali",
-            img : JeanNjali
+            endTime : setTimer(14,0,0),
+            presenter : "Yves Modeste",
+            img : Yves,
+            desc : "Yves Modeste Ngue and panel talks on global diplomacy"
         },
         {
             id: Math.random().toString(36).slice(2),
             title : "This Week in Holyrood (TWiH)",
-            startTime : setTimer(13,0,0),
-            endTime : setTimer(14,0,0),
-            presenter : "Charles Fletcher",
-            img : defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title : "Caribbean Vibes",
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            presenter : "Jambo Presenter",
-            img : defaultJambo
+            presenter : "Charles Fletcher",
+            img : defaultJambo,
+            desc : "Our Parliamentary Editor, Charles’s fletcher brings weekly updates on what is happening at the Scottish parliament."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -893,23 +1325,26 @@ const data = {
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
             presenter : "DJ Kweizah",
-            img : DJKweizah
+            img : DJKweizah,
+            desc : "DJ Kweizah takes you on a journey to the roots of reggae music and bounces the tracks that make reggae music spiritual and exciting."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Exclusive Interviews',
+            title: 'Mind Matters with Agatha Kabera',
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo
+            presenter: "Agatha Kabera",
+            img: Agatha,
+            desc : "Agatha Kabera discusses mental health issues, the stigmas, stereotypes and misconceptions within the Black communities."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Mon Point De Vue Sur La Culture',
+            title : "Caribbean Vibes",
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            presenter: "Pouhela Mgangue",
-            img: Pauhela
+            presenter : "Jambo Presenter",
+            img : defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -917,23 +1352,26 @@ const data = {
             startTime : setTimer(18,0,0),
             endTime : setTimer(20,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
-        },
-        {
-            id: Math.random().toString(36).slice(2),
-            title: 'Recipe for Success',
-            startTime : setTimer(20,0,0),
-            endTime : setTimer(21,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Serious discussion with Barbershop Banter hosted by Andre, Roxanne and Easy"
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'The Nigerian Pride',
+            startTime : setTimer(20,0,0),
+            endTime : setTimer(21,0,0),
+            presenter: "Dr Lion Oluwole Shokunbi",
+            img: Shokunbi,
+            desc : "Dr Lion Oluwole Shokunbi and guests discusses Nigeria with Nigerians."
+        },
+        {
+            id: Math.random().toString(36).slice(2),
+            title: 'Carribean Vibes',
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            presenter: "Dr Lion Oluwole Shokunbi",
-            img: Shokunbi
+            presenter: "Jambo Presenter",
+            img: defaultJambo,
+            desc : "A selection of music from the nations in the Caribbean."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -941,19 +1379,19 @@ const data = {
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi
+            img: Oluwakemi,
+            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
         },
         {
             id: Math.random().toString(36).slice(2),
             title: 'Made in Scotland',
             startTime : setTimer(23,0,0),
-            endTime : setTimer(0,0,0),
+            endTime : setTimer(24,0,0),
             presenter: "Jambo Presenter",
-            img: defaultJambo
+            img: defaultJambo,
+            desc : "Showcase of Scotland’s undiscovered talent"
         }
     ],
 }
 
-module.exports = {
-    data
-}
+module.exports = { data }
