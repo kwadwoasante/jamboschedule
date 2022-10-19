@@ -44,7 +44,103 @@ app.post("/send-email", async function(req,res){
         from: 'kwadwo@asantekwabiah.com', // sender address
         to: `kwadwo.asante@aiesec.net`, // list of receivers
         subject: "Message from Contact page - Mobile App", // plain text body
-        text: `${name}, ${phone} and ${message}`, // html body
+        // text: `${name}, ${phone} and ${message}`, // html body
+        html: `<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+            <title>BlayFind - Firm Account Creation</title>
+        
+            <style>
+                *,::before,::after {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+                body {
+                    width:100vw;
+                    height:100vh;
+                    /* background-color: red; */
+                    background-color:#ededed;
+                    font-family:'Lato', sans-serif;
+                    letter-spacing:normal;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+                h1 {
+                    font-family: 'Montserrat', sans-serif;
+                }
+    
+                .font-bold {
+                    font-weight: 700;
+                }
+        
+                .container {
+                    margin-left:auto;
+                    margin-right:auto;
+                    width:75%;
+                    background-color:#FFD300;
+                    border-radius:12px;
+                    padding:40px 70px;
+                    color:#222222
+                }
+        
+                @media(max-width: 30rem){
+                    .container {
+                        padding: 40px 15px;
+                    }
+                }
+        
+                @media(max-width: 50rem){
+                    .container {
+                        padding: 40px 30px;
+                    }
+                }
+            </style>
+        
+        </head>
+        <body>
+        
+            <div role="main" class="container">
+                <h1 style="font-size:3em;margin-bottom:1.2rem">
+                    Jambo! Radio
+                </h1>
+        
+                <p style="margin-top:2rem;margin-bottom:2rem;">Hi Admin, a message was sent using the mobile application. Details below.<br /><br />
+    
+                    Name: <span class="font-bold">${name}</span><br/>
+                    Phone number: <span class="font-bold">${phone}</span><br/>
+                    Message: <span class="font-bold">${message}</span>
+                    
+                </p>
+    
+                <p>
+                Have a great day!<br />
+                Jambo! Radio
+                </p>
+        
+                <hr style="margin-top:.7rem;margin-bottom:.7rem;opacity:0.2">
+        
+                <p style="color:#555555;font-size:0.825em;text-align:center;margin-bottom:10px;">The email was sent by <b style="color:black">Jambo! Radio</b></p>
+                <p style="color:gray;font-size:0.825em;text-align:center">&copy; <span id="copyYear"></span> Jambo! Radio. All Rights Reserved</p>
+            </div>
+    
+            <script>
+                const year = new Date().getFullYear();
+                document.getElementById("copyYear").innerText = year;
+            </script>
+        
+        </body>
+        </html>`
     });
 
     transporter.sendMail(mailOptions, function(err, data) {
