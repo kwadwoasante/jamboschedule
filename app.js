@@ -41,8 +41,8 @@ app.post("/send-email", async function(req,res){
 
     // send mail with defined transport object
     let mailOptions = await transporter.sendMail({
-        from: 'kwadwo@asantekwabiah.com', // sender address
-        to: `kwadwo.asante@aiesec.net`, // list of receivers
+        from: 'no-reply@jamboradio.co.uk', // sender address
+        to: `info@jamboradio.co.uk`, // list of receivers
         subject: "Message from Contact page - Mobile App", // plain text body
         // text: `${name}, ${phone} and ${message}`, // html body
         html: `<!DOCTYPE html>
