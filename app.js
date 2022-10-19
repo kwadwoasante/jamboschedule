@@ -1,4 +1,5 @@
 require("dotenv").config();
+const http = require("http");
 const createError = require("http-errors");
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended : false }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended : true }));
 
+const httpServer = http.createServer(app);
 
 app.get("/", async function(req,res){
     res.status(200).json({
@@ -65,4 +67,4 @@ app.use(function(req, res, next){
     next(createError(404));
 });
 
-app.listen(process.env.PORT || 5000);
+httpServer.listen(process.env.PORT || 5000);
