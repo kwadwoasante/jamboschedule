@@ -59,27 +59,11 @@ app.get("/current-show", async function(req,res){
 app.post("/day-schedule", async function(req,res){
 
     let day = req.body.day;
-    let dayText = returnDay(day);
-
     let dayData;
-    if(day) dayData = data[dayText];
-    let show;
-
-    let momentDate = moment.tz("Europe/London");
-    let momentHour = momentDate.hour();
-
-    if(momentHour !== 23){
-        show = dayData?.filter((item) => {
-            return (momentHour >= parseISO(item?.startTime).getHours()) && (momentHour < parseISO(item?.endTime).getHours())
-        })
-    } else {
-        show = dayData?.filter((item) => {
-            return (momentHour === parseISO(item?.startTime).getHours())
-        });
-    }
+    if(day) dayData = data[day];
 
     res.status(200).json({
-        message : show
+        message : dayData
     }) 
 
 })
