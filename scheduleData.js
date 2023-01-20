@@ -2,21 +2,36 @@ const { setTimer } = require("./constants") ;
 const fs = require("fs");
 
 // presenters images
-const defaultJambo = fs.readFileSync("./assets/logo_24.png")
-const BB = fs.readFileSync("./assets/imgs/BB.png");
-const Oluwakemi = fs.readFileSync("./assets/imgs/Akinbobola.png");
-const Saada = fs.readFileSync("./assets/imgs/Saada.png");
-const Yves = fs.readFileSync("./assets/imgs/Yves.png");
-const Agatha = fs.readFileSync("./assets/imgs/Agatha.png");
-const Chinny = fs.readFileSync("./assets/imgs/Chinny.png");
-const KBL = fs.readFileSync("./assets/imgs/KBL.png");
-const JeanNjali = fs.readFileSync("./assets/imgs/Michel_and_Guy.png");
-const DJKweizah = fs.readFileSync("./assets/imgs/DJ_Kweizah.png");
-const Shokunbi = fs.readFileSync("./assets/imgs/Shokunbi.png");
-const LadiFemi = fs.readFileSync("./assets/imgs/Ladi_and_Femi.png");
-const host3000 = fs.readFileSync("./assets/imgs/3000_miles.png");
-const africanWarrior = fs.readFileSync("./assets/imgs/African_warrior.png");
-const drDada = fs.readFileSync("./assets/imgs/Dr_Dada.png");
+// const defaultJambo = fs.readFileSync("./assets/logo_24.png")
+// const BB = fs.readFileSync("./assets/imgs/BB.png");
+// const Oluwakemi = fs.readFileSync("./assets/imgs/Akinbobola.png");
+// const Saada = fs.readFileSync("./assets/imgs/Saada.png");
+// const Yves = fs.readFileSync("./assets/imgs/Yves.png");
+// const Agatha = fs.readFileSync("./assets/imgs/Agatha.png");
+// const Chinny = fs.readFileSync("./assets/imgs/Chinny.png");
+// const KBL = fs.readFileSync("./assets/imgs/KBL.png");
+// const JeanNjali = fs.readFileSync("./assets/imgs/Michel_and_Guy.png");
+// const DJKweizah = fs.readFileSync("./assets/imgs/DJ_Kweizah.png");
+// const Shokunbi = fs.readFileSync("./assets/imgs/Shokunbi.png");
+// const LadiFemi = fs.readFileSync("./assets/imgs/Ladi_and_Femi.png");
+// const host3000 = fs.readFileSync("./assets/imgs/3000_miles.png");
+// const africanWarrior = fs.readFileSync("./assets/imgs/African_warrior.png");
+// const drDada = fs.readFileSync("./assets/imgs/Dr_Dada.png");
+const defaultJambo = "http://asantekwabiah.com/assets/img/jambo/logo_24.png";
+const BB = "http://asantekwabiah.com/assets/img/jambo/imgs/BB.png";
+const Oluwakemi = "http://asantekwabiah.com/assets/img/jambo/imgs/Akinbobola.png";
+const Saada = "http://asantekwabiah.com/assets/img/jambo/imgs/Saada.png";
+const Yves = "http://asantekwabiah.com/assets/img/jambo/imgs/Yves.png";
+const Agatha = "http://asantekwabiah.com/assets/img/jambo/imgs/Agatha.png";
+const Chinny = "http://asantekwabiah.com/assets/img/jambo/imgs/Chinny.png";
+const KBL = "http://asantekwabiah.com/assets/img/jambo/imgs/KBL.png";
+const JeanNjali = "http://asantekwabiah.com/assets/img/jambo/imgs/Michel_and_Guy.png";
+const DJKweizah = "http://asantekwabiah.com/assets/img/jambo/imgs/DJ_Kweizah.png";
+const Shokunbi = "http://asantekwabiah.com/assets/img/jambo/imgs/Shokunbi.png";
+const LadiFemi = "http://asantekwabiah.com/assets/img/jambo/imgs/Ladi_and_Femi.png";
+const host3000 = "http://asantekwabiah.com/assets/img/jambo/3000_miles.png";
+const africanWarrior = "http://asantekwabiah.com/assets/img/jambo/African_warrior.png";
+const drDada = "http://asantekwabiah.com/assets/img/jambo/Dr_Dada.png";
 
 const data = {
     "Mon" : [
@@ -795,7 +810,7 @@ const data = {
             id: Math.random().toString(36).slice(2),
             title: 'On The Double',
             startTime : setTimer(18,0,0),
-            endTime : setTimer(19,0,0),
+            endTime : setTimer(20,0,0),
             presenter: "KBL",
             img: KBL,
             desc : "This program seeks to extensively educate the public on the positivity of hip-life, Urban music and lifestyle. It also presents the latest news and information on music, lifestyle and various artists to the public."
@@ -803,7 +818,7 @@ const data = {
         {
             id: Math.random().toString(36).slice(2),
             title: 'Regard Sur La Diplomatie',
-            startTime : setTimer(19,0,0),
+            startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
             presenter: "Yves Modeste",
             img: Yves,
