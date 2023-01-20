@@ -62,8 +62,29 @@ app.post("/day-schedule", async function(req,res){
     let dayData;
     if(day) dayData = data[day];
 
+    let active, activeItem;
+
+    let momentDate = moment.tz("Europe/London");
+    let momentHour = momentDate.hour();
+
+    for (let i = 0; i < dayData?.length; i++) {
+        if(momentHour !== 23){
+            if((momentHour >= parseISO(dayData[i]?.startTime).getHours()) && (momentHour < parseISO(dayData[i]?.endTime).getHours())){
+                active = i;
+                activeItem = dayData[i]
+            }
+        } else {
+            if((momentHour === parseISO(dayData[i]?.startTime).getHours())){
+                active = i;
+                activeItem = dayData[i]
+            }
+        }
+    }
+
     res.status(200).json({
-        message : dayData
+        message : dayData,
+        active : active,
+        activeItem : activeItem
     }) 
 
 })
