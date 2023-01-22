@@ -33,9 +33,7 @@ app.get("/current-show", async function(req,res){
     let today = new Date();
     let day = today.getDay();
     let dayText = returnDay(day);
-
-    let dayData;
-    if(day) dayData = data[dayText];
+    let dayData = data[dayText];
     let show;
 
     let momentDate = moment.tz("Europe/London");
@@ -59,8 +57,7 @@ app.get("/current-show", async function(req,res){
 app.post("/day-schedule", async function(req,res){
 
     let day = req.body.day;
-    let dayData;
-    if(day) dayData = data[day];
+    let dayData = data[day];
 
     let active, activeItem;
 
