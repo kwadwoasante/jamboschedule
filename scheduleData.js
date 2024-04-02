@@ -181,12 +181,12 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Pachedu Renfrewshire',
+            title: '3000 Miles',
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
             presenter: "Jambo Presenter",
             img: defaultJambo,
-            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
+            desc : "3000 Miles kicked off initially as an immigration podcast which concerns itself with Afro-Caribbean realities and predicament in the diaspora before becoming a proper radio program on Jambo Radio Scotland which is now causing a positive wave and getting lots of attention."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -208,21 +208,21 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Made in Scotland',
+            title: 'Positive Health Hour',
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
             presenter: "Jambo Presenter",
             img: defaultJambo,
-            desc : "Showcase of Scotland’s undiscovered talent"
+            desc : "Conversations on HIV prevention and health"
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'North African Playlist (NAP)',
+            title: '3000 Miles',
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
             presenter: "Jambo Presenter",
             img: defaultJambo,
-            desc : "A selection of music from North African countries"
+            desc : "3000 Miles kicked off initially as an immigration podcast which concerns itself with Afro-Caribbean realities and predicament in the diaspora before becoming a proper radio program on Jambo Radio Scotland which is now causing a positive wave and getting lots of attention."
         }
     ],
     "Tues" : [
@@ -318,12 +318,12 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Inspiring Transformation',
+            title: 'Omo Yoruba Atata',
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            presenter: "Jambo Presenter",
-            img: defaultJambo,
-            desc : "We talk to people pushing boundaries on the road to success"
+            presenter: "Yves Modeste",
+            img: Yves,
+            desc : "Is another Yoruba show on Jambo Radio Scotland, which means A Good Yoruba Child. It is a show that would teach young kids how to read and write Yoruba Language and also Pronounce words in Yoruba. It will also include story telling from the olden days for young people and adults that want to know more about the Yoruba culture"
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -354,12 +354,12 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Pachedu Renfrewshire',
+            title: 'The Horn Podcast',
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
             presenter: "Jambo Presenter",
             img: defaultJambo,
-            desc : "A weekly conversational program on issues affecting people in BME communities in Scotland. Coordinated by our partner, a Renfrewshire based charity which helps diverse communities called Pachedu."
+            desc : "The Horn, a podcast series from the International Crisis."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -372,21 +372,21 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Roots Rock Reggae',
+            title: 'Reggae World with DJ Slagg',
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            presenter: "DJ Kweizah",
-            img: DJKweizah,
-            desc : "DJ Kweizah takes you on a journey to the roots of reggae music and bounces the tracks that make reggae music spiritual and exciting."
+            presenter: "DJ Slagg",
+            img: defaultJambo,
+            desc : "Daddy Slaggy takes us to the reggae world."
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Horn of Africa Playlist',
+            title: 'Positive Health Hour',
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
             presenter: "Jambo Presenter",
             img: defaultJambo,
-            desc : "A selection of music from the horn of Africa countries."
+            desc : "Conversations on HIV prevention and health."
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -408,12 +408,12 @@ const data = {
         },
         {
             id: Math.random().toString(36).slice(2),
-            title: 'Yoruba Language Talk Show',
+            title: 'Omo Yoruba Atata',
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            presenter: "Oluwakemi Akinbobola",
-            img: Oluwakemi,
-            desc : "Oluwakemi Akinbobola, chatting about challenging issues couple experience."
+            presenter: "Yves Modeste",
+            img: Yves,
+            desc : "Is another Yoruba show on Jambo Radio Scotland, which means A Good Yoruba Child. It is a show that would teach young kids how to read and write Yoruba Language and also Pronounce words in Yoruba. It will also include story telling from the olden days for young people and adults that want to know more about the Yoruba culture."
         },
         {
             id: Math.random().toString(36).slice(2),
