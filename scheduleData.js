@@ -25,86 +25,85 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...westernPlaylist(defaultJambo)
+            ...westernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...southernPlaylist(defaultJambo)
+            ...southernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...hornPlaylist(defaultJambo)
+            ...hornPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...moment(defaultJambo)
-            // wait for image of Sade and Enoch
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -116,55 +115,55 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...touchPoint(defaultJambo)
+            ...touchPoint()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         }
     ],
     "Tues" : [
@@ -172,79 +171,79 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...westernPlaylist(defaultJambo)
+            ...westernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...easternPlaylist(defaultJambo)
+            ...easternPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...northernPlaylist(defaultJambo)
+            ...northernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -256,55 +255,55 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -318,73 +317,73 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...northernPlaylist(defaultJambo)
+            ...northernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...hornPlaylist(defaultJambo)
+            ...hornPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -396,67 +395,67 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         }
     ],
     "Thurs" : [
@@ -464,145 +463,145 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...southernPlaylist(defaultJambo)
+            ...southernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...easternPlaylist(defaultJambo)
+            ...easternPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...reggaeWorld(defaultJambo)
+            ...reggaeWorld()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...areYouKiddinMe(defaultJambo)
+            ...areYouKiddinMe()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
     ],
     "Fri" : [
@@ -610,121 +609,121 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...hornPlaylist(defaultJambo)
+            ...hornPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...westernPlaylist(defaultJambo)
+            ...westernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...southernPlaylist(defaultJambo)
+            ...southernPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...onTheDouble(KBL)
+            ...onTheDouble()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...madeInScotland(defaultJambo)
+            ...madeInScotland()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -736,19 +735,19 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...areYouKiddinMe(defaultJambo)
+            ...areYouKiddinMe()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
-            ...westernPlaylist(defaultJambo)
+            ...westernPlaylist()
         }
     ],
     "Sat" : [
@@ -756,115 +755,115 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...easternPlaylist(defaultJambo)
+            ...easternPlaylist()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(8,0,0),
             endTime : setTimer(9,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...sportsEngine(defaultJambo)
+            ...sportsEngine()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -876,25 +875,25 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...areYouKiddinMe(defaultJambo)
+            ...areYouKiddinMe()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(4,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         }
     ],
     "Sun" : [
@@ -902,49 +901,49 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(0,0,0),
             endTime : setTimer(1,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(1,0,0),
             endTime : setTimer(2,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(2,0,0),
             endTime : setTimer(3,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(3,0,0),
             endTime : setTimer(4,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(4,0,0),
             endTime : setTimer(5,0,0),
-            ...driveTimeShow(defaultJambo)
+            ...driveTimeShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(5,0,0),
             endTime : setTimer(6,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(6,0,0),
             endTime : setTimer(7,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(7,0,0),
             endTime : setTimer(8,0,0),
-            ...regardSur(Yves)
+            ...regardSur()
         },
         {
             id: Math.random().toString(36).slice(2),
@@ -956,91 +955,91 @@ const data = {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(9,0,0),
             endTime : setTimer(10,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(10,0,0),
             endTime : setTimer(11,0,0),
-            ...exploringFaith(defaultJambo)
+            ...exploringFaith()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(11,0,0),
             endTime : setTimer(12,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(12,0,0),
             endTime : setTimer(13,0,0),
-            ...magazineShow(defaultJambo)
+            ...magazineShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(13,0,0),
             endTime : setTimer(14,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(14,0,0),
             endTime : setTimer(15,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(15,0,0),
             endTime : setTimer(16,0,0),
-            ...scienceShow(drDada)
+            ...scienceShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(16,0,0),
             endTime : setTimer(17,0,0),
-            ...twih(defaultJambo)
+            ...twih()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(17,0,0),
             endTime : setTimer(18,0,0),
-            ...storiesShapeUs(defaultJambo)
+            ...storiesShapeUs()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(18,0,0),
             endTime : setTimer(19,0,0),
-            ...moment(defaultJambo)
+            ...moment()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(19,0,0),
             endTime : setTimer(20,0,0),
-            ...planetSport(defaultJambo)
+            ...planetSport()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(20,0,0),
             endTime : setTimer(21,0,0),
-            ...basolo(defaultJambo)
+            ...basolo()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(21,0,0),
             endTime : setTimer(22,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(22,0,0),
             endTime : setTimer(23,0,0),
-            ...emptyShow(defaultJambo)
+            ...emptyShow()
         },
         {
             id: Math.random().toString(36).slice(2),
             startTime : setTimer(23,0,0),
             endTime : setTimer(24,0,0),
-            ...stereoLove(defaultJambo)
+            ...stereoLove()
         }
     ],
 }
